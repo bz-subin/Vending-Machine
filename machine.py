@@ -27,20 +27,29 @@ print("\n")
 #input의 입력값[0]이 C라면, 나는 dist의 c
 #input의 입력값[0]이 D라면 나는 dist의 D
 
+
+
 count = 0
-for re in range(len(ino)-1) :  # re라는 변수에 ino의 개수를 하나씩 넣는다.0~4
+
+for re in range(len(ino)) :  # re라는 변수에 ino의 개수를 하나씩 넣는다.0~4
+    
     if ino[re] == "A": #첫번째 입력값이 A면 참이다
+        
         count = count + dist.a1 # count 라는 주머니에 넣을거야~
-        print(count)
+        print(ino[re],count)
+
     elif ino[re] == "B":
-        count = count + dist.a2
-        print(count)
+        count = count + dist.b2
+        print(ino[re],count)
+
     elif ino[re] == "C":
         count = count + dist.c
-        print(count)
+        print(ino[re],count)
+
     else: 
         count = count + dist.d
-        print(count)
+        print(ino[re],count)
+
 
 
 #입력값에 따른 점수.
