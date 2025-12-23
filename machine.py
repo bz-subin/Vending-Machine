@@ -16,7 +16,7 @@ print(normal.normal[1],"\n","- A : 7명 이상 /  B : 5명 이상 /  C : 1명 �
 print(normal.normal[2],"\n","- A : 80점 이상 / B : 60점 이상 /  C : 40점 이상 /  D : 0점")
 print(normal.normal[3],"\n","- A : 극단적 위반(음주, 약물, 필수 자격 결여) / B : 중대 위반(타인 위협, 정보 유출) / C : 단순 위반(업무 소홀, 근태 위반) /  D : 해당 없음")
 print(normal.normal[4],"\n","- A : 있음 / B : 해당 없음""\n")
-ino = input("한번에 입력해주세요(예:A, A, A, A, A) : >>>"). split(",")
+ino = input("한번에 입력해주세요(예:A, A, A, A, A) : >>>"). split(", ")
 print("\n")
 # print(ino[0]*5, ino[1]*5, ino[2]*5, ino[3]*5, ino[4]*5)
 
@@ -34,21 +34,20 @@ count = 0
 for re in range(len(ino)) :  # re라는 변수에 ino의 개수를 하나씩 넣는다.0~4
     
     if ino[re] == "A": #첫번째 입력값이 A면 참이다
-        
-        count = count + dist.a1 # count 라는 주머니에 넣을거야~
-        print(ino[re],count)
+        count = count + dist.ai # count 라는 주머니에 넣을거야~ ai ==100
+        print(count)
 
     elif ino[re] == "B":
-        count = count + dist.b2
-        print(ino[re],count)
+        count = count + dist.bi  # bi == 70
+        print(count)
 
     elif ino[re] == "C":
-        count = count + dist.c
-        print(ino[re],count)
+        count = count + dist.ci  # ci == 40
+        print(count)
 
     else: 
-        count = count + dist.d
-        print(ino[re],count)
+        count = count + dist.di
+        print(count)
 
 
 
