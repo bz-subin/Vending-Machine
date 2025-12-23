@@ -18,6 +18,8 @@ print(normal.normal[3],"\n","- A : 극단적 위반(음주, 약물, 필수 자�
 print(normal.normal[4],"\n","- A : 있음 / B : 해당 없음""\n")
 ino = input("한번에 입력해주세요(예:A, A, A, A, A) : >>>"). split(",")
 print("\n")
+# print(ino[0]*5, ino[1]*5, ino[2]*5, ino[3]*5, ino[4]*5)
+
 
 #만약에, 
 #input의 입력값[0]이 A라면 나는 dist의 a1을 내놓을거야.
@@ -26,27 +28,21 @@ print("\n")
 #input의 입력값[0]이 D라면 나는 dist의 D
 
 count = 0
-for re in range(len(ino)-1) :  # re라는 변수에 ino의 번호를 하나씩 넣는다.
-    if ino[0] == "A": #첫번째 입력값이 A면 참이다
-        count + dist.a1 # count 라는 주머니에 넣을거야~
-    elif ino[0] == "B":
-        count + dist.a2
-    elif ino[0] == "C":
-        count + dist.c
+for re in range(len(ino)-1) :  # re라는 변수에 ino의 개수를 하나씩 넣는다.0~4
+    if ino[re] == "A": #첫번째 입력값이 A면 참이다
+        count = count + dist.a1 # count 라는 주머니에 넣을거야~
+        print(count)
+    elif ino[re] == "B":
+        count = count + dist.a2
+        print(count)
+    elif ino[re] == "C":
+        count = count + dist.c
+        print(count)
     else: 
-        count + dist.d
-
-        if ino[1] == "A": # 두번째 입력값이 A면 참이다
-            count + dist.a1 #count 주머니에 더한 값을 넣을거야~
-        elif ino[1] == "B":
-            count + dist.a2
-        elif ino[1] == "C":
-            count + dist.c
-        else: 
-            count + dist.d
+        count = count + dist.d
+        print(count)
 
 
-print(count)
 #입력값에 따른 점수.
 #이건 일반 항목에 따른 결과값이니까, 경감이랑은 상관 없음.
 
