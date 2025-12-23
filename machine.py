@@ -1,6 +1,7 @@
 #최종값이 in
-import module.normal as normal  #일반 항목
+import module.normal as normal  #일반 선택지
 import module.distinction as dist #구분 항목
+import module.mitigation as miti #경감 선택지
 
 #* 가중치(일반, 경감)
 가중치 = [50, 20, 10, 15, 5]
@@ -23,14 +24,6 @@ print("\n")
 
 # if print()==일반[0]
 
-
-
-
-# #*선택지 내놓음2-1
-# 경감 = [
-#     {"유가족 희망" ": 피해자 측이 희망하는 처벌/용서 수준은 무엇입니까?"},
-#     {"외부 압력" ": 외부 압력 검사의 결과는 어느 수준입니까?"} 
-# ]
 
 # #*선택지 내놓음2-2
 # print(경감[0],"\n","- A : 강한 처벌 / B : 용서")
