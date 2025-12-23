@@ -27,23 +27,23 @@ print("\n")
 
 count = 0
 for re in range(len(ino)-1) :  # re라는 변수에 ino의 번호를 하나씩 넣는다.
-    if ino[0] == "A":
-        count = dist.a1
+    if ino[0] == "A": #첫번째 입력값이 A면 참이다
+        count + dist.a1 # count 라는 주머니에 넣을거야~
     elif ino[0] == "B":
-        count = dist.a2
+        count + dist.a2
     elif ino[0] == "C":
-        count = dist.c
+        count + dist.c
     else: 
-        count = dist.d
+        count + dist.d
 
-        if ino[1] == "A":
-            count = count + dist.a1
+        if ino[1] == "A": # 두번째 입력값이 A면 참이다
+            count + dist.a1 #count 주머니에 더한 값을 넣을거야~
         elif ino[1] == "B":
-            count = count + dist.a2
+            count + dist.a2
         elif ino[1] == "C":
-            count = count + dist.c
+            count + dist.c
         else: 
-            count = count + dist.d
+            count + dist.d
 
 
 print(count)
